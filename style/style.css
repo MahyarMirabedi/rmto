@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Vazirmatn UI FD NL;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 30px;
+}
+
+.headflag {
+    display: flex;
+}
+
+#headicon {
+    background-color: #00417b;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 7px;
+    height: 30px;
+}
+
+.menu {
+    background-color: #03203f;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: rgb(245, 90, 34);
+}
+
+.contact {
+    background-color: #f39700;
+    font-size: 18px;
+    padding: 7px;
+    margin: 10px;
+}
+
+.contact:hover {
+    background-color: gray;
+}
+
+.item {
+    border-bottom: solid 1px #dcdcdc;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.list {
+    list-style-type: none;
+    border: solid 0.5px #f2f2f2;
+    background-color: #e8e8e8;
+    margin-right: 40px;
+}
+
+.frist {
+    background-color: #f39700;
+    color: #ffffff;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.list2 {
+    border: solid 0.5px #f2f2f2;
+    background-color: #e8e8e8;
+    margin-right: 40px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    padding-left: 10px;
+    margin-right: 170px;
+    margin-top: 70px;
+}
+
+.slider {
+    display: flex;
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.slider h3 {
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.slider p {
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.sliderImg {
+    width: 30%;
+    padding: 20px;
+}
+
+.srch input {
+    width: 100%;
+    padding: 4px;
+}
+
+.srch {
+    background-color: #ffffff;
+    padding-top: 40px;
+    display: flex;
+}
+
+#srchIcon {
+    color: #337ab7;
+    border: solid 0.5px #f2f2f2;
+    background-color: #dcdcdc;
+    padding: 7px;
+    margin-bottom: auto;
+
+}
+
+#searchIcon {
+    border: solid 0.5 #f2f2f2;
+    background-color: #dcdcdc;
+    padding: 7px;
+    margin-bottom: auto;
+}
+
+.main {
+    width: 55%;
+    padding: 20px;
+    background-color: #dcdcdc;
+    margin-right: 1px;
+    margin-top: 20px;
+}
+
+#mainIcon {
+    color: #ffffff;
+    background-color: #5f5f64;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.icon {
+    float: left;
+    padding-left: 25px;
+}
+
+.icon::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.icon :hover {
+    background-color: #f39700;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.Information {
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #00417b;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.SubRest {
+    direction: ltr;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #03203f;
+    color: #ffffff;
+}
+
+.footer div {
+    padding: 15px;
+}
+
+.footerH {
+    border-bottom: #ffffff solid;
+    padding: 10px;
+}
+
+.footer img {
+    padding-top: 40px;
+}
+
+.ContactUs ul li {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00417b;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        padding-right: 20%;
+        padding-bottom: 25px;
+    }
+
+    .headflag {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        /* width: 70%; */
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .side {
+        width: auto;
+        justify-content: center;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+
+    .srch {
+        display: none;
+    }
+
+    .main {
+        width: auto;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .sliderImg {
+        width: auto;
+    }
+
+    .Information {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
